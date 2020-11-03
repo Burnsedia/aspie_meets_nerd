@@ -7,7 +7,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
+      title: 'Aspie Meets Nerd',
       theme: ThemeData(
         // This is the theme of your application.
         //
@@ -108,4 +108,39 @@ class _MyHomePageState extends State<MyHomePage> {
       ), // This trailing comma makes auto-formatting nicer for build methods.
     );
   }
+}
+
+class LoginPage extends StatelessWidget {
+  LoginPage({Key key, this.title}): super(key:key);
+  final String title;
+
+  @override
+  _LoginPage createState() => _LoginPage();
+
+}
+
+class _LoginPage extends State<LoginPage> {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        // Here we take the value from the MyHomePage object that was created by
+        // the App.build method, and use it to set our appbar title.
+        title: Text(widget.title),
+      ),
+      body: Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: <Widget>[
+            Text(
+              'You have pushed the button this many times:',
+            ),
+            Text(),
+          ],
+        ),
+     ),  
+      floatingActionButton: FloatingActionButton(), // This trailing comma makes auto-formatting nicer for build methods.
+    );
+  }
+
 }
