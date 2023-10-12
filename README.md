@@ -1,5 +1,6 @@
 # aspie_meets_nerd
 
+## Need to update to latest flutter
 Dating app for Austisic Adults and Nerds
 
 ## Getting Started
